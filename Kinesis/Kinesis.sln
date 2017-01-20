@@ -1,14 +1,24 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-
+Project("{594025CA-E6DF-A6B9-073D-C25DE93DDB56}") = "Kinesis", "Assembly-CSharp.csproj", "{2F6DFB24-3725-D531-5A2B-7F1FDCE90D7E}"
+EndProject
+Project("{594025CA-E6DF-A6B9-073D-C25DE93DDB56}") = "Kinesis", "Assembly-CSharp-Editor.csproj", "{D20BB598-A785-FFFC-6211-6AD7046A0766}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{2F6DFB24-3725-D531-5A2B-7F1FDCE90D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F6DFB24-3725-D531-5A2B-7F1FDCE90D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F6DFB24-3725-D531-5A2B-7F1FDCE90D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F6DFB24-3725-D531-5A2B-7F1FDCE90D7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D20BB598-A785-FFFC-6211-6AD7046A0766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D20BB598-A785-FFFC-6211-6AD7046A0766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D20BB598-A785-FFFC-6211-6AD7046A0766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D20BB598-A785-FFFC-6211-6AD7046A0766}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
