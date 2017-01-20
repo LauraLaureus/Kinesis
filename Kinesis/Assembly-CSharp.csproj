@@ -46,7 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AtGaze.cs" />
+     <Compile Include="Assets\Scripts\AtGaze.cs" />
+     <Compile Include="Assets\Scripts\CameraGaze.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Tobii\EyeTrackingFramework\Components\GazeAware.cs" />
      <Compile Include="Assets\Tobii\EyeTrackingFramework\DataProviders\DataProviderBase.cs" />
