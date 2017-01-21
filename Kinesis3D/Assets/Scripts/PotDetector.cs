@@ -9,11 +9,14 @@ public class PotDetector : MonoBehaviour {
     {
         Sprite image = other.gameObject.GetComponent<SpriteRenderer>().sprite;
 		if (!string.Equals (image.name, GameObject.Find ("Image").GetComponent<RandomGenerator> ().getCurrentName ())) {
-			//TODO si el objetos es incorrecto Quitar una vida.
+			
 			Debug.Log("Trigger Entered_ objetos distintos");
+			GameObject.Find ("Canvas").GetComponent<FinalLife> ().lifeLoss ();
+			Destroy (other.gameObject);
 		} 
 		else {
-			//si el objeto es correcto decirle que cree un lazy spawn
+			GameObject.Find ("Image").GetComponent<RandomGenerator> ().next();
+			Destroy (other.gameObject);
 			Debug.Log("Trigger Entered_ objetos iguales");
 		}
        

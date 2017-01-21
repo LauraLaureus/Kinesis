@@ -43,13 +43,20 @@ public class RandomGenerator : MonoBehaviour {
     }
 
     IEnumerator ChangePic() {
-        currentIndex = (int)(Random.value * ingredients.Length);
-        image.sprite = ingredients[currentIndex];
-        currentState = States.Wait;
+		changePicture ();
         yield return 0;
     }
 
+	private void changePicture(){
+		currentIndex = (int)(Random.value * ingredients.Length);
+		image.sprite = ingredients[currentIndex];
+		currentState = States.Wait;
+	}
     public string getCurrentName() {
         return ingredients[currentIndex].name;
     }
+
+	public void next(){
+		changePicture ();
+	}
 }

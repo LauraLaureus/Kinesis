@@ -97,11 +97,11 @@ public class AtGaze : MonoBehaviour {
         }
         else {
             
-            gazePosition.z = -0.1f;
+            gazePosition.z = 0.0f;
 
             Vector3 nextPosition = Camera.main.ScreenToWorldPoint(gazePosition);
 
-			nextPosition.z = 0.0f;
+			nextPosition.z = -1.9f;
             this.transform.position = nextPosition;
         }
         yield return 0;
@@ -111,7 +111,7 @@ public class AtGaze : MonoBehaviour {
     IEnumerator Drop() {
         //drop
         Debug.Log("Me has abandonado");
-
+		this.gameObject.layer = 27;
         rb.useGravity = true;
 
         currentState = State.End;
@@ -131,4 +131,7 @@ public class AtGaze : MonoBehaviour {
         yield return 0;
     }
 
+	void OnDestroy(){
+		controller.SendMessage("ReleaseEveryBody");
+	}
 }

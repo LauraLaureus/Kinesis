@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AtGaze.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PotDetector.cs">
     <Files>
-      <File FileName="Assets\Scripts\AtGaze.cs" Line="125" Column="23" />
-      <File FileName="Assets\Scripts\PotDetector.cs" Line="12" Column="55" />
+      <File FileName="Assets\Scripts\AtGaze.cs" Line="33" Column="1" />
+      <File FileName="Assets\Scripts\PotDetector.cs" Line="18" Column="69" />
+      <File FileName="Assets\Scripts\FinalLife.cs" Line="12" Column="17" />
+      <File FileName="Assets\Scripts\RandomGenerator.cs" Line="59" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
