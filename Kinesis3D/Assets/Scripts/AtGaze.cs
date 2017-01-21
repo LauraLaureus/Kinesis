@@ -26,6 +26,9 @@ public class AtGaze : MonoBehaviour {
     private GazeAware _gazeAware;
     private Locker locker;
     private Vector3 originalPosition;
+	private AudioSource fx;
+	private Rigidbody rb;
+
     public int counter;
 
     // Use this for initialization
@@ -34,18 +37,19 @@ public class AtGaze : MonoBehaviour {
         locker = GetComponent<Locker>();
         controller = GameObject.Find("CatchController").GetComponent<CatchController>();
         currentState = State.LockEveryBodyElse;
+		fx = GetComponent<AudioSource> ();
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.Space) && !locker.isLocked)
         {
             currentState = State.Drop;
         }
 
         StartCoroutine(currentState.ToString());
-        Debug.Log(locker.isLocked);
+      
 
         
 	}
@@ -66,6 +70,15 @@ public class AtGaze : MonoBehaviour {
 
 
         lastPosition = new Vector2(transform.position.x, transform.position.y);
+		//TODO start FX
+		fx.Play();
+		if (GetComponent<Rigidbody> () == null) {
+			rb =  this.gameObject.AddComponent<Rigidbody>();
+			rb.useGravity = false;
+			rb.mass = 0f;
+			rb.constraints = RigidbodyConstraints.FreezeRotation;
+			
+		}
         currentState = State.Move;
     }
         yield return 0;
@@ -77,17 +90,18 @@ public class AtGaze : MonoBehaviour {
         Vector3 gazePosition = EyeTracking.GetGazePoint().Screen;
 
 
-        Debug.Log(Vector3.Distance(gazePosition, lastPosition));
         if (Vector3.Distance(gazePosition, lastPosition) > bubleRadius)
         {
+			fx.Stop ();
             currentState = State.Drop;
         }
         else {
-            Debug.Log(gazePosition.ToString());
-            gazePosition.z = -1f;
-            //gazePosition += (transform.forward * (-2f));
+            
+            gazePosition.z = -0.1f;
+
             Vector3 nextPosition = Camera.main.ScreenToWorldPoint(gazePosition);
 
+			nextPosition.z = 0.0f;
             this.transform.position = nextPosition;
         }
         yield return 0;
@@ -98,7 +112,6 @@ public class AtGaze : MonoBehaviour {
         //drop
         Debug.Log("Me has abandonado");
 
-        Rigidbody rb =  this.gameObject.AddComponent<Rigidbody>();
         rb.useGravity = true;
 
         currentState = State.End;
