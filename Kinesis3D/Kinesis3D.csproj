@@ -69,6 +69,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AtGaze.cs" />
+    <Compile Include="Assets\Scripts\CameraGaze.cs" />
+    <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Tobii\DemoScenes\Scripts\CloudPointVisualizer.cs" />
     <Compile Include="Assets\Tobii\DemoScenes\Scripts\Example01\PrintGazePosition.cs" />
     <Compile Include="Assets\Tobii\DemoScenes\Scripts\Example01\ShowNoGazeDetection.cs" />
