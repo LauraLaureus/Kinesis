@@ -50,6 +50,7 @@
      <Compile Include="Assets\Tobii\EyeTrackingFramework\Editor\EyeTrackingSettingsWindow.cs" />
      <Compile Include="Assets\Tobii\EyeTrackingFramework\Editor\Tests\UnityPlayerGameViewBoundsTest.cs" />
      <None Include="Assets\Tobii\Plugins\x86_64\Tobii.EyeX.Client.Net20.xml" />
+     <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
      <None Include="Assets\Tobii\Plugins\x86\Tobii.EyeX.Client.Net20.xml" />
      <None Include="Assets\Tobii\DemoScenes\Readme-DemoSceneSetup.txt" />
      <None Include="Assets\Tobii\Readme.txt" />
@@ -96,6 +97,8 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{88DA306D-CD76-BDFD-212B-EEEC461A4AF3}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript.unityproj">
+      <Project>{768134CE-DB6E-1B59-2D4B-71ADC20F4627}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

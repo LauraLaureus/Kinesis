@@ -61,6 +61,7 @@ public class AtGaze : MonoBehaviour {
         controller.SendMessage("LockEveryBodyElse", (object)this.gameObject);
         this.gameObject.layer = 27;
 
+		//TODO modificar para colocar la luz. 
         Vector3 increment = new Vector3(1f, 1f, 1f);
         transform.localScale += increment;
 
@@ -131,7 +132,11 @@ public class AtGaze : MonoBehaviour {
         yield return 0;
     }
 
-	void OnDestroy(){
-		controller.SendMessage("ReleaseEveryBody");
+
+		
+
+	public void releaseEveryBody(){
+		this.controller.SendMessage("ReleaseEveryBody");
 	}
+
 }
