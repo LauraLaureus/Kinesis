@@ -9,11 +9,8 @@ public class CatchController : MonoBehaviour {
     public delegate void ReleaseEverybody();
     public static event ReleaseEverybody releaseThem;
 
-	void OnEnable(){
-		DontDestroyOnLoad (this);
-	}
-
-     void LockEveryBodyElse(GameObject sender) {
+    
+	void LockEveryBodyElse(GameObject sender) {
         //Mandar un evento a todos aquellos que sean objetos capturables excepto aquel que manda el mensaje
         if (lockThem != null)
             lockThem(sender);
