@@ -16,6 +16,7 @@ public class PotDetector : MonoBehaviour {
 		} 
 		else {
 			GameObject.Find ("Image").GetComponent<RandomGenerator> ().next();
+			Debug.Log(other.gameObject.name);
 			Destroy (other.gameObject);
 			Debug.Log("Trigger Entered_ objetos iguales");
 		}

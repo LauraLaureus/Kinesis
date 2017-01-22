@@ -61,7 +61,7 @@ public class AtGaze : MonoBehaviour {
         controller.SendMessage("LockEveryBodyElse", (object)this.gameObject);
         this.gameObject.layer = 27;
 
-        Vector3 increment = new Vector3(2f, 2f, 2f);
+        Vector3 increment = new Vector3(1f, 1f, 1f);
         transform.localScale += increment;
 
         increment = transform.position;

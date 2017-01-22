@@ -20,15 +20,5 @@ public class CatchController : MonoBehaviour {
         if (releaseThem != null)
             releaseThem();
     }
-
-    /*
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}*/
+		
 }
