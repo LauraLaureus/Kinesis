@@ -33,6 +33,9 @@ public class AtGaze : MonoBehaviour {
     public int counter;
 	private float distance;
 
+	public GameObject anim;
+	private Animator animator;
+
     // Use this for initialization
     void Start () {
 		_gazeAware = GetComponent<GazeAware>();
@@ -40,18 +43,13 @@ public class AtGaze : MonoBehaviour {
         controller = GameObject.Find("CatchController").GetComponent<CatchController>();
         currentState = State.LockEveryBodyElse;
 		fx = GetComponent<AudioSource> ();
+		animator = anim.GetComponent<Animator> ();
+		animator.Stop ();
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-		/*if (Input.GetKeyDown(KeyCode.Space) && !locker.isLocked)
-        {
-            currentState = State.Drop;
-        }
-
-        StartCoroutine(currentState.ToString());
-      */
 		if (dragging) {
 		
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
@@ -72,13 +70,14 @@ public class AtGaze : MonoBehaviour {
 			rb.useGravity = false;
 			rb.mass = 0f;
 			rb.constraints = RigidbodyConstraints.FreezeRotation;
-
 		}
+		animator.Play ("Waves");
 	}
 
 	void OnMouseUp(){
 		dragging = false;
 		Drop ();
+		animator.Stop ();
 	}
 
 
