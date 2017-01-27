@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\RandomGenerator.cs" />
      <Compile Include="Assets\Scripts\Respawn.cs" />
      <Compile Include="Assets\Scripts\TimerDisplay.cs" />
+     <Compile Include="Assets\Scripts\script_sensei.cs" />
      <Compile Include="Assets\Tobii\DemoScenes\Scripts\CloudPointVisualizer.cs" />
      <Compile Include="Assets\Tobii\DemoScenes\Scripts\Example01\PrintGazePosition.cs" />
      <Compile Include="Assets\Tobii\DemoScenes\Scripts\Example01\ShowNoGazeDetection.cs" />
@@ -119,6 +120,7 @@
      <Compile Include="Assets\Tobii\EyeTrackingFramework\Utilities\WindowHelpers.cs" />
      <Compile Include="Assets\Tobii\Plugins\SimpleJSON.cs" />
      <None Include="Assets\Tobii\Plugins\x86_64\Tobii.EyeX.Client.Net20.xml" />
+     <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
      <None Include="Assets\Tobii\Plugins\x86\Tobii.EyeX.Client.Net20.xml" />
      <None Include="Assets\Tobii\DemoScenes\Readme-DemoSceneSetup.txt" />
      <None Include="Assets\Tobii\Readme.txt" />

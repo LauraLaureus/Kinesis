@@ -19,6 +19,7 @@ public class AtGaze : MonoBehaviour {
     public GameObject controllerObject;
     public float bubleRadius;
     public int limit;
+	public bool dragging;
 
     private CatchController controller;
     private State currentState;
@@ -30,6 +31,10 @@ public class AtGaze : MonoBehaviour {
 	private Rigidbody rb;
 
     public int counter;
+	private float distance;
+
+	public GameObject anim;
+	private Animator animator;
 
     // Use this for initialization
     void Start () {
@@ -38,21 +43,43 @@ public class AtGaze : MonoBehaviour {
         controller = GameObject.Find("CatchController").GetComponent<CatchController>();
         currentState = State.LockEveryBodyElse;
 		fx = GetComponent<AudioSource> ();
+		animator = anim.GetComponent<Animator> ();
+		animator.Stop ();
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown(KeyCode.Space) && !locker.isLocked)
-        {
-            currentState = State.Drop;
-        }
-
-        StartCoroutine(currentState.ToString());
-      
+		if (dragging) {
+		
+			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			Vector3 rayPoint = ray.GetPoint (distance);
+			rayPoint.z = -1f;
+			transform.position = rayPoint;
+		}
 
         
 	}
+
+	void OnMouseDown(){
+		distance = Vector3.Distance (transform.position, Camera.main.transform.position);
+		dragging = true;
+		fx.Play();
+		if (GetComponent<Rigidbody> () == null) {
+			rb =  this.gameObject.AddComponent<Rigidbody>();
+			rb.useGravity = false;
+			rb.mass = 0f;
+			rb.constraints = RigidbodyConstraints.FreezeRotation;
+		}
+		animator.Play ("Waves");
+	}
+
+	void OnMouseUp(){
+		dragging = false;
+		Drop ();
+		animator.Stop ();
+	}
+
 
     IEnumerator LockEveryBodyElse() {
 
@@ -61,6 +88,7 @@ public class AtGaze : MonoBehaviour {
         controller.SendMessage("LockEveryBodyElse", (object)this.gameObject);
         this.gameObject.layer = 27;
 
+		//TODO modificar para colocar la luz. 
         Vector3 increment = new Vector3(1f, 1f, 1f);
         transform.localScale += increment;
 
@@ -71,14 +99,7 @@ public class AtGaze : MonoBehaviour {
 
         lastPosition = new Vector2(transform.position.x, transform.position.y);
 		//TODO start FX
-		fx.Play();
-		if (GetComponent<Rigidbody> () == null) {
-			rb =  this.gameObject.AddComponent<Rigidbody>();
-			rb.useGravity = false;
-			rb.mass = 0f;
-			rb.constraints = RigidbodyConstraints.FreezeRotation;
-			
-		}
+		
         currentState = State.Move;
     }
         yield return 0;
@@ -108,15 +129,9 @@ public class AtGaze : MonoBehaviour {
     }
 
 
-    IEnumerator Drop() {
-        //drop
-        Debug.Log("Me has abandonado");
+    void Drop() {
 		this.gameObject.layer = 27;
-        rb.useGravity = true;
-
-        currentState = State.End;
-        yield return 0;
-        
+		rb.useGravity = true;        
     }
 
 
@@ -124,14 +139,22 @@ public class AtGaze : MonoBehaviour {
         if (this.transform.position.y <= -3f) {
             //TODO FX 
             controller.SendMessage("ReleaseEveryBody");
-            currentState = State.LockEveryBodyElse;
             Destroy(this.gameObject);
             
         }
         yield return 0;
     }
 
-	void OnDestroy(){
-		controller.SendMessage("ReleaseEveryBody");
+
+		
+
+	public void releaseEveryBody(){
+		this.controller.SendMessage("ReleaseEveryBody");
 	}
+
+
+	void OnDestroy(){
+		releaseEveryBody ();
+	}
+
 }
