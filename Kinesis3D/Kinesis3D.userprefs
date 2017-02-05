@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AtGaze.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\script_sensei.cs">
     <Files>
       <File FileName="Assets\Scripts\AtGaze.cs" Line="147" Column="1" />
+      <File FileName="Assets\Scripts\script_sensei.cs" Line="3" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
