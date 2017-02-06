@@ -1,0 +1,66 @@
+Initialize engine version: 5.4.4f1 (5a3967d8c55d)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 520 (ID=0x1916)
+    Vendor:   Intel
+    VRAM:     2111 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Tobii.EyeX.Client.Net20.dll (this message is harmless)
+Loading C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Tobii.EyeX.Client.Net20.dll into Unity Child Domain
+Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Tobii.EyeX.Client.Net20.dll (this message is harmless)
+Loading C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Tobii.EyeX.Client.Net20.dll into Unity Child Domain
+- Completed reload, in  0.080 seconds
+Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.789334 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1568 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.386039 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 269.
+Total: 0.223573 ms (FindLiveObjects: 0.034133 ms CreateObjectMapping: 0.019626 ms MarkObjects: 0.160000 ms  DeleteObjects: 0.009386 ms)
+
+The referenced script on this Behaviour (Game Object 'shelfObject') is missing!
+ 
+(Filename:  Line: 1656)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.065815 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 334.
+Total: 0.319573 ms (FindLiveObjects: 0.031573 ms CreateObjectMapping: 0.025600 ms MarkObjects: 0.247893 ms  DeleteObjects: 0.013226 ms)
+
+Tobii EyeTracking is running.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.819309 ms
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1390.
+Total: 0.596907 ms (FindLiveObjects: 0.082346 ms CreateObjectMapping: 0.081066 ms MarkObjects: 0.382720 ms  DeleteObjects: 0.049920 ms)
+
+Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Boo.Lang.dll (this message is harmless)
+Tobii EyeTracking is shutting down.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
