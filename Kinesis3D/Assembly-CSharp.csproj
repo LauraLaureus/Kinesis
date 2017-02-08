@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\PotDetector.cs" />
      <Compile Include="Assets\Scripts\RandomGenerator.cs" />
      <Compile Include="Assets\Scripts\Respawn.cs" />
+     <Compile Include="Assets\Scripts\ShelfObjectController.cs" />
      <Compile Include="Assets\Scripts\TimerDisplay.cs" />
      <Compile Include="Assets\Scripts\TutorialSpaceBarController.cs" />
      <Compile Include="Assets\Scripts\script_sensei.cs" />
