@@ -45,6 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AttachPoint.cs" />
+     <Compile Include="Assets\AttacheableBehaviour.cs" />
+     <Compile Include="Assets\FollowGaze.cs" />
+     <Compile Include="Assets\GazePlot.cs" />
      <Compile Include="Assets\Scripts\AtGaze.cs" />
      <Compile Include="Assets\Scripts\CameraGaze.cs" />
      <Compile Include="Assets\Scripts\CatchController.cs" />
@@ -58,6 +62,7 @@
      <Compile Include="Assets\Scripts\RandomGenerator.cs" />
      <Compile Include="Assets\Scripts\Respawn.cs" />
      <Compile Include="Assets\Scripts\ShelfObjectController.cs" />
+     <Compile Include="Assets\Scripts\Smooth.cs" />
      <Compile Include="Assets\Scripts\TimerDisplay.cs" />
      <Compile Include="Assets\Scripts\TutorialSpaceBarController.cs" />
      <Compile Include="Assets\Scripts\script_sensei.cs" />

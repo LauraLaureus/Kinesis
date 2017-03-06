@@ -5,7 +5,7 @@ using Tobii.EyeTracking;
 
 
 [RequireComponent(typeof(GazeAware))]
-public class AtGaze : MonoBehaviour {
+public partial class AtGaze : MonoBehaviour {
 
 	enum State
 	{
