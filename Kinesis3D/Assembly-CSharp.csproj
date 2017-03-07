@@ -45,16 +45,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AttachPoint.cs" />
-     <Compile Include="Assets\AttacheableBehaviour.cs" />
-     <Compile Include="Assets\FollowGaze.cs" />
-     <Compile Include="Assets\GazePlot.cs" />
      <Compile Include="Assets\Scripts\AtGaze.cs" />
+     <Compile Include="Assets\Scripts\AttachPoint.cs" />
+     <Compile Include="Assets\Scripts\AttacheableBehaviour.cs" />
      <Compile Include="Assets\Scripts\CameraGaze.cs" />
      <Compile Include="Assets\Scripts\CatchController.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\Exit.cs" />
      <Compile Include="Assets\Scripts\FinalLife.cs" />
+     <Compile Include="Assets\Scripts\FollowGaze.cs" />
+     <Compile Include="Assets\Scripts\GazePlot.cs" />
      <Compile Include="Assets\Scripts\Locker.cs" />
      <Compile Include="Assets\Scripts\MenuCall.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
