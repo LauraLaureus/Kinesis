@@ -39,6 +39,7 @@ public class GazePlot : MonoBehaviour {
 		gazePoint = EyeTracking.GetGazePoint();
 
 		if(gazePoint != GazePoint.Invalid)
+			//TODO obtener el punto a parte y establecer la coordenada Z a -1.
 			transform.position = Vector3.MoveTowards (transform.position, ProjectToPlaneInWorld (gazePoint), smoothFactor);
 	}
 

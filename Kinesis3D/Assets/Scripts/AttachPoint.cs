@@ -16,6 +16,7 @@ public class AttachPoint : MonoBehaviour {
 	void Update () {
 		RaycastHit hit;
 		if (Physics.Raycast (this.transform.position, Vector3.forward, out hit)) {
+			Debug.Log ("Raycast hit!");
 			hit.collider.gameObject.GetComponent<FollowGaze> ().moveTorwards (this.transform.position);
 		}
 	}

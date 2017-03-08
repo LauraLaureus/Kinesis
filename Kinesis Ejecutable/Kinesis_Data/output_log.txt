@@ -22,7 +22,7 @@ Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Ki
 Loading C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Tobii.EyeX.Client.Net20.dll into Unity Child Domain
 Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Tobii.EyeX.Client.Net20.dll (this message is harmless)
 Loading C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Tobii.EyeX.Client.Net20.dll into Unity Child Domain
-- Completed reload, in  0.080 seconds
+- Completed reload, in  0.434 seconds
 Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
@@ -30,34 +30,34 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.789334 ms
+UnloadTime: 30.686344 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1568 -> priority: 1 
+  Thread -> id: 3bc8 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.386039 ms
+UnloadTime: 7.154785 ms
 
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 269.
-Total: 0.223573 ms (FindLiveObjects: 0.034133 ms CreateObjectMapping: 0.019626 ms MarkObjects: 0.160000 ms  DeleteObjects: 0.009386 ms)
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 273.
+Total: 0.280320 ms (FindLiveObjects: 0.054613 ms CreateObjectMapping: 0.029440 ms MarkObjects: 0.182613 ms  DeleteObjects: 0.013226 ms)
 
 The referenced script on this Behaviour (Game Object 'shelfObject') is missing!
  
 (Filename:  Line: 1656)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.065815 ms
+UnloadTime: 2.155097 ms
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 334.
-Total: 0.319573 ms (FindLiveObjects: 0.031573 ms CreateObjectMapping: 0.025600 ms MarkObjects: 0.247893 ms  DeleteObjects: 0.013226 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 338.
+Total: 0.804268 ms (FindLiveObjects: 0.094720 ms CreateObjectMapping: 0.039680 ms MarkObjects: 0.648107 ms  DeleteObjects: 0.018773 ms)
 
 Tobii EyeTracking is running.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.819309 ms
+UnloadTime: 2.059523 ms
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1390.
-Total: 0.596907 ms (FindLiveObjects: 0.082346 ms CreateObjectMapping: 0.081066 ms MarkObjects: 0.382720 ms  DeleteObjects: 0.049920 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 930.
+Total: 0.661761 ms (FindLiveObjects: 0.057600 ms CreateObjectMapping: 0.038826 ms MarkObjects: 0.497067 ms  DeleteObjects: 0.067840 ms)
 
 Platform assembly: C:\Users\Laura\Documents\GitHub\Kinesis\Kinesis Ejecutable\Kinesis_Data\Managed\Boo.Lang.dll (this message is harmless)
 Tobii EyeTracking is shutting down.
