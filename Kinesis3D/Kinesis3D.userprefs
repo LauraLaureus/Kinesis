@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FollowGaze.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AttachPoint.cs">
     <Files>
       <File FileName="Assets\Scripts\AtGaze.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\script_sensei.cs" Line="1" Column="1" />
@@ -8,7 +8,8 @@
       <File FileName="Assets\Tobii\DemoScenes\Scripts\GazePlotter.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Smooth.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ShelfObjectController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FollowGaze.cs" Line="12" Column="1" />
+      <File FileName="Assets\Scripts\FollowGaze.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AttachPoint.cs" Line="19" Column="95" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -14,6 +14,9 @@ public class AttachPoint : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		Physics.Raycast (this.transform.position, Vector3.forward);
+		RaycastHit hit;
+		if (Physics.Raycast (this.transform.position, Vector3.forward, out hit)) {
+			hit.collider.gameObject.GetComponent<FollowGaze> ().moveTorwards (this.transform.position);
+		}
 	}
 }
