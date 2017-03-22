@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GazePlot.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AttachPoint.cs">
     <Files>
       <File FileName="Assets\Scripts\ShelfObjectController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FollowGaze.cs" Line="7" Column="51" />
-      <File FileName="Assets\Scripts\AttachPoint.cs" Line="6" Column="2" />
-      <File FileName="Assets\Scripts\GazePlot.cs" Line="44" Column="3" />
+      <File FileName="Assets\Scripts\FollowGaze.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AttachPoint.cs" Line="39" Column="6" />
+      <File FileName="Assets\Scripts\GazePlot.cs" Line="9" Column="35" />
+      <File FileName="Assets\Scripts\Timer.cs" Line="33" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

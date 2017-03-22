@@ -10,7 +10,7 @@ public class GazePlot : MonoBehaviour {
 	public float smoothFactor;
 	public GazePoint gazePoint;
 
-	public Vector3 smoothify(Vector3 point){
+	/*public Vector3 smoothify(Vector3 point){
 		if (!hasPrevious) {
 			previousPoint = point;
 			hasPrevious = true;
@@ -25,7 +25,7 @@ public class GazePlot : MonoBehaviour {
 
 		previousPoint = smoothedPoint;
 		return smoothedPoint;
-	}
+	} */
 
 	private Vector3 ProjectToPlaneInWorld(GazePoint gazePoint)
 	{
