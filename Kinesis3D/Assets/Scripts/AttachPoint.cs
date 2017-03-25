@@ -9,6 +9,7 @@ public class AttachPoint : MonoBehaviour {
 	void Start(){
 		this.timer = this.gameObject.GetComponent<Timer> ();
 		timer.Enable (false);
+		timer.setPhysicsDeltaTime (true);
 	}
 
 	public void attach(GameObject sceneObject){
@@ -20,31 +21,19 @@ public class AttachPoint : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		RaycastHit hit;
-		if (Physics.Raycast (this.transform.position, Vector3.forward, out hit)) {
 
-			if (attached == null) {
-				attached = hit.collider.gameObject;
-				this.timer.Enable (true);
-			} 
-			else {
-				if (attached != hit.collider.gameObject) {
-					attached = null;
-					timer.Enable (false);
-					timer.Reset ();
-				} 
-				else if(timer.isTimeOut()) {
-					attached.GetComponent<FollowGaze> ().moveTorwards (this.transform.position);
-				}
+		if (this.GetComponent<PhysicsRayCilinder> ().ForwardCast (out hit)) {
+			timer.Enable (true);
+
+			if (timer.isTimeOut ()) {
+				hit.collider.gameObject.GetComponent<FollowGaze> ().moveTorwards (transform.position);
 			}
-
-			//hit.collider.gameObject.GetComponent<FollowGaze> ().moveTorwards (this.transform.position);
-		}else{
-			attached = null;
-			timer.Enable (false);
-			timer.Reset ();
+			
 		}
+
+
 	}
 
 

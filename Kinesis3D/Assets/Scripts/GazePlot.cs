@@ -4,28 +4,12 @@ using Tobii.EyeTracking;
 
 public class GazePlot : MonoBehaviour {
 
-
-	private Vector3 previousPoint = Vector3.zero;
-	private bool hasPrevious = false;
 	public float smoothFactor;
 	public GazePoint gazePoint;
 
-	/*public Vector3 smoothify(Vector3 point){
-		if (!hasPrevious) {
-			previousPoint = point;
-			hasPrevious = true;
-		}
-
-
-		Vector3 smoothedPoint = new Vector3 (
-			point.x * (1-smoothFactor)+ previousPoint.x*smoothFactor,
-			point.y * (1-smoothFactor)+ previousPoint.y*smoothFactor,
-			point.z * (1-smoothFactor)+ previousPoint.z*smoothFactor
-		);
-
-		previousPoint = smoothedPoint;
-		return smoothedPoint;
-	} */
+	float smoothFunction(){
+		return smoothFactor * (1 / (0.0001f+ Mathf.Abs (Vector3.Distance (transform.position, ProjectToPlaneInWorld (gazePoint)))));
+	}
 
 	private Vector3 ProjectToPlaneInWorld(GazePoint gazePoint)
 	{
@@ -39,8 +23,7 @@ public class GazePlot : MonoBehaviour {
 		gazePoint = EyeTracking.GetGazePoint();
 
 		if(gazePoint != GazePoint.Invalid)
-			//TODO obtener el punto a parte y establecer la coordenada Z a -1.
-			transform.position = Vector3.MoveTowards (transform.position, ProjectToPlaneInWorld (gazePoint), smoothFactor);
+			transform.position = Vector3.MoveTowards (transform.position, ProjectToPlaneInWorld (gazePoint), smoothFunction());
 	}
 
 
