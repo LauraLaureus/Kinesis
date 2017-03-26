@@ -7,8 +7,9 @@ public class GazePlot : MonoBehaviour {
 	public float smoothFactor;
 	public GazePoint gazePoint;
 
+	//NOT USING 26/03/2017
 	float smoothFunction(){
-		return smoothFactor * (1 / (0.0001f+ Mathf.Abs (Vector3.Distance (transform.position, ProjectToPlaneInWorld (gazePoint)))));
+		return smoothFactor * (1 / (1f+ Mathf.Abs (Vector3.Distance (transform.position, ProjectToPlaneInWorld (gazePoint)))));
 	}
 
 	private Vector3 ProjectToPlaneInWorld(GazePoint gazePoint)
@@ -22,8 +23,11 @@ public class GazePlot : MonoBehaviour {
 	void Update () {
 		gazePoint = EyeTracking.GetGazePoint();
 
-		if(gazePoint != GazePoint.Invalid)
-			transform.position = Vector3.MoveTowards (transform.position, ProjectToPlaneInWorld (gazePoint), smoothFunction());
+		if (gazePoint != GazePoint.Invalid) {
+			Vector3 destiny = ProjectToPlaneInWorld (gazePoint);
+			transform.position = Vector3.MoveTowards (transform.position,destiny, smoothFunction());
+		}
+			
 	}
 
 

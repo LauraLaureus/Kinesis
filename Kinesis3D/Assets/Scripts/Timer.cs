@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour {
 	}
 
 	public bool isTimeOut(){
-		return current >= limit;
+		return this.current >= this.limit;
 	}
 
 	public void setPhysicsDeltaTime(bool phy){
@@ -33,14 +33,14 @@ public class Timer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (isEnabled && !isPhysicsDeltaTime) {
-			this.current = Time.deltaTime;
+			this.current += Time.deltaTime;
 		}
-		Debug.Log ("Timer: " + this.current.ToString ());
+		//Debug.Log ("Timer: " + this.current.ToString ());
 	}
 
 	void FixedUpdate(){
 		if (isEnabled && isPhysicsDeltaTime) {
-			this.current = Time.deltaTime;
+			this.current += Time.fixedDeltaTime;
 		}
 		Debug.Log ("Physics Timer: " + this.current.ToString ());
 	

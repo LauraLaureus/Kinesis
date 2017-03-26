@@ -22,15 +22,22 @@ public class AttachPoint : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
+
 		RaycastHit hit;
 
 		if (this.GetComponent<PhysicsRayCilinder> ().ForwardCast (out hit)) {
 			timer.Enable (true);
 
 			if (timer.isTimeOut ()) {
+				//attach ();
+
 				hit.collider.gameObject.GetComponent<FollowGaze> ().moveTorwards (transform.position);
 			}
 			
+		} else {
+			Debug.Log ("David guapo!!!");
+			timer.Enable (false);
+			timer.Reset ();
 		}
 
 
