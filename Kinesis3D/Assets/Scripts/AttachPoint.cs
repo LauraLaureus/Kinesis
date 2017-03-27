@@ -29,13 +29,12 @@ public class AttachPoint : MonoBehaviour {
 			timer.Enable (true);
 
 			if (timer.isTimeOut ()) {
-				//attach ();
-
-				hit.collider.gameObject.GetComponent<FollowGaze> ().moveTorwards (transform.position);
+				if(attached == null)
+					attach (hit.collider.gameObject);
+				attached.GetComponent<FollowGaze> ().moveTorwards (transform.position);
 			}
 			
 		} else {
-			Debug.Log ("David guapo!!!");
 			timer.Enable (false);
 			timer.Reset ();
 		}

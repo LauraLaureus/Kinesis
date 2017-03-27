@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour {
 	}
 
 	public bool queryEnabled(){
-		return isEnabled
+		return isEnabled;
 	}
 
 	// Use this for initialization
