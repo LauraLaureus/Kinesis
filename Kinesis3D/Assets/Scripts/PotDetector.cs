@@ -18,11 +18,12 @@ public class PotDetector : MonoBehaviour {
 			} 
 			else {
 				GameObject.Find ("Image").GetComponent<RandomGenerator> ().next();
+			//TODO: reiniciar el timer. 
 				Debug.Log(other.gameObject.name);
 
 			}
 
-			other.gameObject.GetComponent<AtGaze> ().releaseEveryBody();
+			GameObject.Find ("PlayerGaze").GetComponent<AttachPoint> ().deattach ();
 			Destroy (other.gameObject);
         
 
