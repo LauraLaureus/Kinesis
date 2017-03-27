@@ -16,6 +16,10 @@ public class Timer : MonoBehaviour {
 		this.isEnabled = enable;
 	}
 
+	public bool queryEnabled(){
+		return isEnabled
+	}
+
 	// Use this for initialization
 	void Start () {
 		this.isEnabled = false;

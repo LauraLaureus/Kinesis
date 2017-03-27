@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AtGaze.cs" />
      <Compile Include="Assets\Scripts\AttachPoint.cs" />
+     <Compile Include="Assets\Scripts\AttachedTimer.cs" />
      <Compile Include="Assets\Scripts\CatchController.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\Exit.cs" />
