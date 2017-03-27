@@ -37,6 +37,8 @@ public class AttachPoint : MonoBehaviour {
 		} else {
 			timer.Enable (false);
 			timer.Reset ();
+			if(attached != null)
+				attached.GetComponent<FollowGaze> ().moveTorwards (transform.position);
 		}
 
 
