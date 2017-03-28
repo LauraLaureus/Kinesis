@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\TimerDisplay.cs" />
      <Compile Include="Assets\Scripts\TutorialSpaceBarController.cs" />
      <Compile Include="Assets\Scripts\script_sensei.cs" />
+     <Compile Include="Assets\SmokeBlower.cs" />
      <Compile Include="Assets\Tobii\DemoScenes\Scripts\CloudPointVisualizer.cs" />
      <Compile Include="Assets\Tobii\DemoScenes\Scripts\Example01\PrintGazePosition.cs" />
      <Compile Include="Assets\Tobii\DemoScenes\Scripts\Example01\ShowNoGazeDetection.cs" />
