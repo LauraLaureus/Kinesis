@@ -17,20 +17,30 @@ public class AttachPoint : MonoBehaviour {
 	}
 
 	public void deattach(){
+		attached.GetComponent<ParticleSystemEnable> ().enableParticleSystem (false);
+		//Destroy (attached);
+		attached.GetComponent<FollowGaze>().fall();
 		attached = null;
 	}
 
 	// Update is called once per frame
 	void FixedUpdate () {
 
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			this.deattach ();
+		}
+
 		RaycastHit hit;
 
-		if (this.GetComponent<PhysicsRayCilinder> ().ForwardCast (out hit)) {
+		if (this.GetComponent<PhysicsRayCilinder> ().ForwardCast (out hit) && this.attached == null) {
 			timer.Enable (true);
 
 			if (timer.isTimeOut ()) {
-				if(attached == null)
+				if (attached == null && hit.collider.gameObject != null) {
 					attach (hit.collider.gameObject);
+					attached.GetComponent<ParticleSystemEnable> ().enableParticleSystem (true);
+				}
+					
 				attached.GetComponent<FollowGaze> ().moveTorwards (transform.position);
 			}
 			

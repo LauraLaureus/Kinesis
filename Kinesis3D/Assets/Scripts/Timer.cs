@@ -46,7 +46,7 @@ public class Timer : MonoBehaviour {
 		if (isEnabled && isPhysicsDeltaTime) {
 			this.current += Time.fixedDeltaTime;
 		}
-		Debug.Log ("Physics Timer: " + this.current.ToString ());
+		//Debug.Log ("Physics Timer: " + this.current.ToString ());
 	
 	}
 }
