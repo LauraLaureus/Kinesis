@@ -17,7 +17,7 @@ public class AttachPoint : MonoBehaviour {
 	}
 
 	public void deattach(){
-		attached.GetComponent<ParticleSystemEnable> ().enableParticleSystem (false);
+		attached.GetComponent<ParticleSystemEnable> ().enableParticleSystem (false,true);
 		//Destroy (attached);
 		attached.GetComponent<FollowGaze>().fall();
 		attached = null;
@@ -35,10 +35,14 @@ public class AttachPoint : MonoBehaviour {
 		if (this.GetComponent<PhysicsRayCilinder> ().ForwardCast (out hit) && this.attached == null) {
 			timer.Enable (true);
 
+			if (attached == null && hit.collider.gameObject != null) {
+				hit.collider.gameObject.GetComponent<FollowGaze>().illuminate();
+			}
+
 			if (timer.isTimeOut ()) {
 				if (attached == null && hit.collider.gameObject != null) {
 					attach (hit.collider.gameObject);
-					attached.GetComponent<ParticleSystemEnable> ().enableParticleSystem (true);
+					attached.GetComponent<ParticleSystemEnable> ().enableParticleSystem (true,true);
 				}
 					
 				attached.GetComponent<FollowGaze> ().moveTorwards (transform.position);

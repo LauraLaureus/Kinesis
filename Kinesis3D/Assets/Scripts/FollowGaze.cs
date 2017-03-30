@@ -3,6 +3,8 @@ using System.Collections;
 
 public class FollowGaze : MonoBehaviour {
 
+
+
 	public void moveTorwards(Vector3 v){
 		this.transform.position = new Vector3(v.x,v.y,-10.5f);
 	}
@@ -13,5 +15,9 @@ public class FollowGaze : MonoBehaviour {
 
 	void OnBecameInvisible(){
 		this.GetComponent<AudioSource> ().enabled = true;
+	}
+
+	public void illuminate(){
+		transform.GetChild (0).GetComponent<ParticleSystemController> ().illuminate ();
 	}
 }
