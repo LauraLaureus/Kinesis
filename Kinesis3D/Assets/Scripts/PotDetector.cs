@@ -4,6 +4,11 @@ using System.Collections;
 
 public class PotDetector : MonoBehaviour {
 
+	AudioSource audio;
+
+	void Start(){
+		this.audio = this.gameObject.GetComponent<AudioSource> ();
+	}
 
     void OnTriggerEnter(Collider other)
     {
@@ -24,12 +29,16 @@ public class PotDetector : MonoBehaviour {
 			Debug.Log(other.gameObject.name);
 
 		}
-
+		this.audio.enabled = true;
 		GameObject.Find ("PlayerGaze").GetComponent<AttachPoint> ().deattach ();
 		Destroy (other.gameObject);
-    
+	
 
     }
 
+	void FixedUpdate(){
+		if(this.audio.enabled && !this.audio.isPlaying)
+			this.audio.enabled = false;
+	}
    
 }
