@@ -45,7 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ParticleSystemController.cs" />
      <Compile Include="Assets\Scripts\AtGaze.cs" />
      <Compile Include="Assets\Scripts\AttachPoint.cs" />
      <Compile Include="Assets\Scripts\AttachedTimer.cs" />
@@ -57,12 +56,14 @@
      <Compile Include="Assets\Scripts\GazePlot.cs" />
      <Compile Include="Assets\Scripts\Locker.cs" />
      <Compile Include="Assets\Scripts\MenuCall.cs" />
+     <Compile Include="Assets\Scripts\ParticleSystemController.cs" />
      <Compile Include="Assets\Scripts\ParticleSystemEnable.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PhysicsRayCilinder.cs" />
      <Compile Include="Assets\Scripts\PotDetector.cs" />
      <Compile Include="Assets\Scripts\RandomGenerator.cs" />
      <Compile Include="Assets\Scripts\Respawn.cs" />
+     <Compile Include="Assets\Scripts\ScriptSenseiFromFile.cs" />
      <Compile Include="Assets\Scripts\ShelfObjectController.cs" />
      <Compile Include="Assets\Scripts\SmokeBlower.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
@@ -131,6 +132,7 @@
      <Compile Include="Assets\Tobii\EyeTrackingFramework\Utilities\WindowHelpers.cs" />
      <Compile Include="Assets\Tobii\Plugins\SimpleJSON.cs" />
      <None Include="Assets\Tobii\Plugins\x86_64\Tobii.EyeX.Client.Net20.xml" />
+     <None Include="Assets\Dialog\Tutorial_ES.txt" />
      <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
      <None Include="Assets\Tobii\Plugins\x86\Tobii.EyeX.Client.Net20.xml" />
      <None Include="Assets\Tobii\DemoScenes\Readme-DemoSceneSetup.txt" />

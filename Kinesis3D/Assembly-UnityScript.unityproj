@@ -48,6 +48,7 @@
      <Compile Include="Assets\KY_effects\Script\ConGUI.js" />
      <Compile Include="Assets\KY_effects\Script\Lighting.js" />
      <None Include="Assets\Tobii\Plugins\x86_64\Tobii.EyeX.Client.Net20.xml" />
+     <None Include="Assets\Dialog\Tutorial_ES.txt" />
      <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
      <None Include="Assets\Tobii\Plugins\x86\Tobii.EyeX.Client.Net20.xml" />
      <None Include="Assets\Tobii\DemoScenes\Readme-DemoSceneSetup.txt" />

@@ -50,6 +50,7 @@
      <Compile Include="Assets\Tobii\EyeTrackingFramework\Editor\EyeTrackingSettingsWindow.cs" />
      <Compile Include="Assets\Tobii\EyeTrackingFramework\Editor\Tests\UnityPlayerGameViewBoundsTest.cs" />
      <None Include="Assets\Tobii\Plugins\x86_64\Tobii.EyeX.Client.Net20.xml" />
+     <None Include="Assets\Dialog\Tutorial_ES.txt" />
      <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
      <None Include="Assets\Tobii\Plugins\x86\Tobii.EyeX.Client.Net20.xml" />
      <None Include="Assets\Tobii\DemoScenes\Readme-DemoSceneSetup.txt" />

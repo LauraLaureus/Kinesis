@@ -31,7 +31,7 @@ public class script_sensei : MonoBehaviour {
 		} else {
 			SceneManager.LoadScene ("Game");
 		}
-
+		Debug.Log (Application.dataPath.ToString ());
 	}
 
 
