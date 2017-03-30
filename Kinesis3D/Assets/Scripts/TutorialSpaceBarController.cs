@@ -6,7 +6,7 @@ public class TutorialSpaceBarController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.anyKeyDown)
+		if(Input.GetKeyDown(KeyCode.RightArrow))
 			SceneManager.LoadScene("Game");
 	}
 }

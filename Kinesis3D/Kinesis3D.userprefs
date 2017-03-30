@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ParticleSystemController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\script_sensei.cs">
     <Files>
-      <File FileName="Assets\Scripts\FollowGaze.cs" Line="21" Column="1" />
-      <File FileName="Assets\Scripts\AttachPoint.cs" Line="38" Column="1" />
-      <File FileName="Assets\Scripts\ParticleSystemEnable.cs" Line="27" Column="3" />
-      <File FileName="Assets\ParticleSystemController.cs" Line="33" Column="16" />
+      <File FileName="Assets\Scripts\FollowGaze.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AttachPoint.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ParticleSystemEnable.cs" Line="1" Column="1" />
+      <File FileName="Assets\ParticleSystemController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\script_sensei.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
