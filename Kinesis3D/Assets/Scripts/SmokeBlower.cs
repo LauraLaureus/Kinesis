@@ -11,7 +11,10 @@ public class SmokeBlower : MonoBehaviour {
 	}
 	
 	public void blow(){
-		animator.SetTrigger ("smokeRight");
 		animator.SetTrigger ("smokeWrong");
+	}
+
+	public void right(){
+		animator.SetTrigger ("smokeRight");	
 	}
 }
